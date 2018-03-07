@@ -89,7 +89,7 @@ This script treats the poem *This Is Just To Say* (William Carlos Williams) as a
 - Choose a different piece of text to make into a mad lib. 
 
 
-## Advanced bot: respondingbot.py
+## Advanced bot: listeningbot.py
 
 This script tweets a random line from a .txt file whenever @ocertat tweets.
 
@@ -99,8 +99,3 @@ This script tweets a random line from a .txt file whenever @ocertat tweets.
 This script (markovmaker.py) uses a Markov chain to create a new file full of nonsense sentences from another text (twain.txt is included).
 
 Use mybot2.py to tweet out lines from the new .txt file you created (note that the new filename is `mashup_markov/yourfilename.txt`).
-
-
-## Advanced bot: imagebot.py
-
-This bot makes a call to an images API, downloads an image, then tweets it with a caption drawn from a .txt file

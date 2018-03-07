@@ -20,7 +20,7 @@ api = tweepy.API(auth)
 # What the bot will tweet
 tweet = 'Hello ALA!'
 
-# loop through the tweet_list and tweet each item
+# Send out the tweet and print it to the console 
 api.update_status(status=tweet)
 print(tweet)
 
