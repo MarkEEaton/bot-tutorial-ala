@@ -3,13 +3,11 @@
 
 # Twitter Bot Starter Kit: Bot 2
 
-# This bot tweets a text file line by line, waiting a
-# given period of time between tweets.
+# This bot tweets three times, waiting 15 seconds between tweets.
 
-# Download a Project Gutenberg "Plain Text UTF-8" file,
-# open it in Notepad, remove junk at beginning,
-# and replace all double-linebreaks with single linebreaks.
-
+# If you haven't yet created credentials.py, modify credentials.template 
+# to include your own Twitter account settings. This script will then tweet
+# using your bot's account 
 
 # Housekeeping: do not edit
 import tweepy, time
@@ -20,16 +18,13 @@ api = tweepy.API(auth)
 
 
 # What the bot will tweet
-filename = open('twain.txt','r') 
-tweet_text = filename.readlines() 
-filename.close()
+tweet_list = ['Test tweet one!', 'Test tweet two!', 'Test tweet three!']
 
-# loop through the tweet_list
-for line in tweet_text[0:5]: # Will only write first 5 lines
+# loop through the tweet_list and tweet each item
+for line in tweet_list: 
     api.update_status(status=line)
     print(line)
+    print('...')
     time.sleep(15) # Sleep for 15 seconds
 
 print("All done!")
-
-# To quit early: CTRL+C and wait a few seconds

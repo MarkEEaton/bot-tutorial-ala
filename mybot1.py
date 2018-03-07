@@ -3,7 +3,7 @@
 
 # Twitter Bot Starter Kit: Bot 1
 
-# This bot tweets three times, waiting 15 seconds between tweets.
+# This is the most basic bot. It sends out a tweet!
 
 # If you haven't yet created credentials.py, modify credentials.template 
 # to include your own Twitter account settings. This script will then tweet
@@ -18,15 +18,10 @@ api = tweepy.API(auth)
 
 
 # What the bot will tweet
-tweet_list = ['Test tweet one!', 'Test tweet two!', 'Test tweet three!']
+tweet = 'Hello ALA!'
 
 # loop through the tweet_list and tweet each item
-for line in tweet_list: 
-    api.update_status(status=line)
-    print(line)
-    print('...')
-    time.sleep(15) # Sleep for 15 seconds
+api.update_status(status=tweet)
+print(tweet)
 
 print("All done!")
-
-

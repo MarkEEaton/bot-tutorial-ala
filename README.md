@@ -38,7 +38,11 @@ Not part of the in-person workshop? Download these files to your local machine o
 
 4. (Optional) Follow @bots4lib, which will follow & retweet bots made in this workshop
 
-## Basic bot: mybot.py
+## Basic bot: mybot1.py
+
+This isn't really a bot yet, but it is a script that sends out a tweet using the Twitter API. Our code is tweeting!
+
+## Basic bot: mybot2.py
 
 This script is a basic Twitter bot. It will tweet three things from a **list** inside the script.
 
@@ -52,7 +56,7 @@ This script is a basic Twitter bot. It will tweet three things from a **list** i
 - In `tweetlist`, add new things for your bot to tweet
 - Increase/decrease time between tweets in `time.sleep(15)` (15 is the number of seconds) 
 
-## Intermediate bot: mybot2.py
+## Intermediate bot: mybot3.py
 
 This script sends out five tweets from the first five lines of an external .txt file
 
