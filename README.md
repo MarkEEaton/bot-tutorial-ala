@@ -21,7 +21,7 @@ If you're participating in this in-person workshop:
 
 Bots left running on PythonAnywhere will keep running for a day or so (if the script you're using, like `mybot2.py`, is programmed to keep iterating through tweets) even if you close PythonAnywhere.
 
-Not part of the in-person workshop? Download these files to your local machine or use this command: `git clone https://github.com/robincamille/bot-tutorial-code4lib.git`
+Not part of the in-person workshop? Download these files to your local machine or use this command: `git clone https://github.com/MarkEEaton/bot-tutorial-ala.git`
 
 ## Create a Twitter account for your bot
 
