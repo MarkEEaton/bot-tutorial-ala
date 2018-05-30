@@ -46,7 +46,7 @@ This isn't really a bot yet, but it is a script that sends out a tweet using the
 
 This script is a basic Twitter bot. It will tweet three things from a **list** inside the script.
 
-1. Go to the bot-tutorial-code4lib folder. Click on `mybot.py` to see the code
+1. Go to the bot-tutorial-code4lib folder. Click on `mybot2.py` to see the code
 
 2. Take a look at the script; Robin and Mark will talk about what it's doing
 
@@ -60,7 +60,7 @@ This script is a basic Twitter bot. It will tweet three things from a **list** i
 
 This script sends out five tweets from the first five lines of an external .txt file
 
-1. Go to the bot-tutorial-code4lib folder. Click on `mybot2.py`
+1. Go to the bot-tutorial-code4lib folder. Click on `mybot3.py`
 
 2. Also look at `twain.txt` to see the text
 
@@ -74,8 +74,7 @@ This script sends out five tweets from the first five lines of an external .txt 
    - Remove junk at the beginning (and the end) of the file. Save the file
    - Replace double linebreaks with single linebreaks. If your file is very short you can maybe do this manually.
    - For longer files you can click on `Open bash console here` and type: `cd bot-tutorial-code4lib` then `grep . filename > newfilename`. Open up the new file to make sure that it worked.
-   - If you're on a Windows machine, the grep command above might not work as expected, because Windows handles line endings differently than Mac or linux systems. If you're having this problem, replace the grep command above with `grep -v "^[[:space:]]*$" filename > newfilename`
-   - In mybot2.py, replace `twain.txt` with the `newfilename` 
+   - In mybot3.py, replace `twain.txt` with the `newfilename` 
  - Make the bot send more or fewer tweets, or change which lines, by editing the numbers in `for line in tweettext[0:5]`. 
    - `[0:5]` means from the first thing up to (but not including) the fifth thing
  
