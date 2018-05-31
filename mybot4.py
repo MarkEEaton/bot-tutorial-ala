@@ -29,7 +29,7 @@ while True:
 
     # select a random item from the tweet_list
     # and compose the tweet
-    random_integer = randint(0, len(tweet_list) - 1)
+    random_integer = randint(1, len(tweet_list) - 1)
     random_db = tweet_list[random_integer]
     tweet = random_db[1] + ' : ' + random_db[2]
 
