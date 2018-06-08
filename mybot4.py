@@ -20,18 +20,19 @@ api = tweepy.API(auth)
 
 # What the bot will tweet
 filename = open('az_database_list.csv', 'r')
-tweet_csv = csv.reader(filename)
-tweet_list = list(tweet_csv)
+csv_data = csv.reader(filename)
+csv_list = list(csv_data)
 filename.close()
 
 # create a continuous loop
 while True:
 
-    # select a random item from the tweet_list
-    # and compose the tweet
-    random_integer = randint(1, len(tweet_list) - 1)
-    random_db = tweet_list[random_integer]
-    tweet = random_db[1] + ' : ' + random_db[2]
+    # select a random item from the csv_list
+    random_integer = randint(1, len(csv_list) - 1)
+    csv_list_item = csv_list[random_integer]
+
+    # compose the tweet
+    tweet = csv_list_item[1] + ' : ' + csv_list_item[2]
 
     # check to make sure the tweet is not too many characters
     # and if it's too long, shorten it!
