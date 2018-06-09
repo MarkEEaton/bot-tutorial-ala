@@ -42,6 +42,8 @@ Not part of the in-person workshop? Download these files to your local machine o
 
 This isn't really a bot yet, but it is a script that sends out a tweet using the Twitter API. Our code is tweeting!
 
+- Clicking `Run` will run the bot. A console will appear at the bottom of the screen with the output
+
 ## Basic bot: mybot2.py
 
 This script is a basic Twitter bot. It will tweet three things from a **list** inside the script.
@@ -50,7 +52,7 @@ This script is a basic Twitter bot. It will tweet three things from a **list** i
 
 2. Take a look at the script; Robin and Mark will talk about what it's doing
 
-3. Clicking `Run` will run the bot. A console will appear at the bottom of the screen with the output
+3. `Run` the bot!
 
 *Change it up!*
 - In `tweetlist`, add new things for your bot to tweet
@@ -80,11 +82,11 @@ This script sends out five tweets from the first five lines of an external .txt 
 
 ## Intermediate bot: mybot4.py
 
-This script sends out tweets based on randomly selected database titles (and their descriptions) from a CSV file
+This script sends out tweets based on randomly selected titles (and their descriptions) from a CSV file
 
 1. Go to the bot-tutorial-ala folder. Click on `mybot4.py`
 
-2. Also take a look at `az_database_list.csv` to see the data file. This file is a list of databases at Kingsborough Community College. It was exported from LibGuides. Before sharing this, we removed a couple of columns that had internal library data. CSV, or comma separated values, is a great data format to work on in both Python and spreadsheets like Excel. 
+2. Also take a look at `az_database_list.csv` to see the data file. This file is a list of electronic products at Kingsborough Community College. It was exported from LibGuides. Before sharing this, we removed a couple of columns that had internal library data. CSV, or comma separated values, is a great data format to work on in both Python and in Excel. 
  
 3. Take a look at both files; Robin and Mark will talk about what the script is doing
 
