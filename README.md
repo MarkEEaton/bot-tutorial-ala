@@ -1,14 +1,18 @@
 # Twitter bot tutorial: ALA 2018 edition
 
-*See original repo: https://github.com/robincamille/bot-tutorial*
-
-This tutorial and its materials are put together by Robin Davis (@robincamille) and Mark Eaton (github.com/MarkEEaton) for a pre-conference workshop at [ALA 2018](https://2018.alaannual.org/). 
+This tutorial and its materials are put together by Robin Davis (@robincamille) and Mark Eaton (github.com/MarkEEaton) for the [Python for Beginners: A Gentle and Fun Introduction](https://www.eventscribe.com/2018/ALA-Annual/fsPopup.asp?Mode=presInfo&PresentationID=379935) LITA pre-conference workshop at [ALA 2018](https://2018.alaannual.org/). 
 
 See also: Davis, Robin, and Mark Eaton. [Make a Twitter Bot in Python: Iterative Code Examples](http://jitp.commons.gc.cuny.edu/make-a-twitter-bot-in-python-iterative-code-examples/). *Journal of Interactive Technology and Pedagogy* (Blueprints section).  April 2016. (Verbose write-up featuring [code from a previous version](https://github.com/robincamille/bot-tutorial) of this workshop.)
+
+---
+
+See original repo: https://github.com/robincamille/bot-tutorial
 
 Written in Python 3.
 
 **Required libraries:** tweepy 3.5, requests, time, os, random, csv
+
+---
 
 ## Create an account on PythonAnywhere
 
