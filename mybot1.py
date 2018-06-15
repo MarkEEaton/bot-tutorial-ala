@@ -10,7 +10,7 @@
 # using your bot's account 
 
 # Housekeeping: do not edit
-import tweepy, time
+import tweepy
 from credentials import *
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)

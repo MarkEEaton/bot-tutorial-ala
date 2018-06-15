@@ -45,3 +45,6 @@ while True:
 
     # wait 10 seconds before repeating
     time.sleep(10)
+
+
+# To quit: press CTRL+C and wait a few seconds

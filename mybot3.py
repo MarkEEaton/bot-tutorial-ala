@@ -24,7 +24,7 @@ filename = open('twain.txt', 'r')
 tweet_text = filename.readlines()
 filename.close()
 
-# loop through the tweet_list
+# loop through the tweet_text
 for line in tweet_text[0:5]: # Will only write first 5 lines
     api.update_status(status=line)
     print(line)

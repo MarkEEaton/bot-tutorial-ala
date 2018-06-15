@@ -31,7 +31,7 @@ filename.close()
 
 # a function that picks a random line
 def line_number():
-    return randint(0, len(tweet_text))
+    return randint(0, len(tweet_text) - 1)
 
 
 # this is the function that does most of the work of the bot
@@ -39,9 +39,7 @@ def compare_tweets():
 
     # uses the global lasttweet variable, rather than the local one.
     # (it's probably best practice not to use a global variable for
-    # this purpose, but we've shown this approach for its readability.
-    # We'll also show an alternate way to accomplish this without
-    # using a global variable).
+    # this purpose, but we've shown this approach for its readability.)
     global last_tweet
 
     # gets the most recent tweet by @ocertat and prints its id
@@ -55,7 +53,7 @@ def compare_tweets():
         api.update_status(status=line)
         print(line)
 
-    # updates lasttweet to the most recent tweet
+    # updates last_tweet to the most_recent_tweet
     last_tweet = most_recent_tweet
 
 # runs the compare_tweets function every 5 seconds
@@ -65,4 +63,4 @@ while True:
     time.sleep(5)  # Sleep for 5 seconds
 
 
-# To quit early: CTRL+C and wait a few seconds
+# To quit: CTRL+C and wait a few seconds
