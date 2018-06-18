@@ -96,7 +96,7 @@ This script sends out tweets based on randomly selected titles (and their descri
 
 4. Try running it!
 
-## Advanced bot: plumpoem.py
+## Advanced bot: advanced_plumpoem.py
 
 This script treats the poem *This Is Just To Say* (William Carlos Williams) as a mad-lib, filling in four blanks from four data sources: JSON files from @dariusk's [collection of corpora](https://github.com/dariusk/corpora). 
 
@@ -105,13 +105,30 @@ This script treats the poem *This Is Just To Say* (William Carlos Williams) as a
 - Choose a different piece of text to make into a mad lib. 
 
 
-## Advanced bot: listeningbot.py
+## Advanced bot: advanced_listeningbot.py
 
-This script tweets a random line from a .txt file whenever @ocertat tweets.
+This script tweets a random line from a `.txt` file whenever @ocertat (Mark) tweets.
+
+*Change it up!*
+- Change what the bot tweets whenever it "hears" a new tweet from @ocertat.
+- Change who the bot listens to from @ocertat to someone else. (Please don't make a spam bot!)
 
 
-## Advanced bot: mashup_markov
+## Advanced bot: advanced\_mashup_markov/
 
-This script (markovmaker.py) uses a Markov chain to create a new file full of nonsense sentences from another text (twain.txt is included).
+This script (`advanced\_mashup_markov/markovmaker.py`) uses a Markov chain to create a new file full of nonsense sentences from another text. `twain.txt` is included as the default source text.
 
-Use mybot2.py to tweet out lines from the new .txt file you created (note that the new filename is `mashup_markov/yourfilename.txt`).
+This script doesn't tweet, it just makes a new text file. Point `mybot3.py` to the new `.txt` file you created to tweet out lines. (Note that the new filename is `advanced\_mashup_markov/twain_markov.txt` or the filename of your choosing.)
+
+*Change it up!*
+- Download or create a new `.txt` file that `markovmaker.py` will use to generate nonsensical text. Library conference abstracts, perhaps? 
+
+## Advanced bot: advanced_ala-talk-generator.py
+
+This bot mixes up talk titles from ALA Annual Conferences 2016, 2017, and 2018. The mash-up titles are composed of two halves, each from a real ALA program talk.
+
+The script chooses a random beginning and ending from `data/ala\_beginners.txt` and `data/ala\_enders.txt` each time it tweets. (These data files have been pre-prepared and cleaned; talk titles were split in half at `:`, `?`, `at`, `of`, `for`, `on`, and `and`, sometimes generating multiple beginning and ending halves.) 
+
+*Change it up!*
+- Create a new data file, `enders.txt`, and populate it with new language data, like song titles. Each potential title ender should be on its own line in the `.txt` file.
+

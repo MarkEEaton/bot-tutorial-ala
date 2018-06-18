@@ -20,7 +20,7 @@ api = tweepy.API(auth)
 
 
 # What the bot will tweet
-filename = open('twain.txt', 'r')
+filename = open('data/twain.txt', 'r')
 tweet_text = filename.readlines()
 filename.close()
 
