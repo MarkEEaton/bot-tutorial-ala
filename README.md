@@ -116,9 +116,9 @@ This script tweets a random line from a `.txt` file whenever @ocertat (Mark) twe
 
 ## Advanced bot: advanced\_mashup_markov/
 
-This script (`advanced\_mashup_markov/markovmaker.py`) uses a Markov chain to create a new file full of nonsense sentences from another text. `twain.txt` is included as the default source text.
+This script (`advanced_mashup_markov/markovmaker.py`) uses a Markov chain to create a new file full of nonsense sentences from another text. `twain.txt` is included as the default source text.
 
-This script doesn't tweet, it just makes a new text file. Point `mybot3.py` to the new `.txt` file you created to tweet out lines. (Note that the new filename is `advanced\_mashup_markov/twain_markov.txt` or the filename of your choosing.)
+This script doesn't tweet, it just makes a new text file. Point `mybot3.py` to the new `.txt` file you created to tweet out lines. (Note that the new filename is `advanced_mashup_markov/twain_markov.txt` or the filename of your choosing.)
 
 *Change it up!*
 - Download or create a new `.txt` file that `markovmaker.py` will use to generate nonsensical text. Library conference abstracts, perhaps? 
@@ -127,7 +127,7 @@ This script doesn't tweet, it just makes a new text file. Point `mybot3.py` to t
 
 This bot mixes up talk titles from ALA Annual Conferences 2016, 2017, and 2018. The mash-up titles are composed of two halves, each from a real ALA program talk.
 
-The script chooses a random beginning and ending from `data/ala\_beginners.txt` and `data/ala\_enders.txt` each time it tweets. (These data files have been pre-prepared and cleaned; talk titles were split in half at `:`, `?`, `at`, `of`, `for`, `on`, and `and`, sometimes generating multiple beginning and ending halves.) 
+The script chooses a random beginning and ending from `data/ala_beginners.txt` and `data/ala_enders.txt` each time it tweets. (These data files have been pre-prepared and cleaned; talk titles were split in half at `:`, `?`, `at`, `of`, `for`, `on`, and `and`, sometimes generating multiple beginning and ending halves.) 
 
 *Change it up!*
 - Create a new data file, `enders.txt`, and populate it with new language data, like song titles. Each potential title ender should be on its own line in the `.txt` file.
