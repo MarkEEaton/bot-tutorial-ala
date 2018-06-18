@@ -19,7 +19,7 @@ api = tweepy.API(auth)
 
 
 # What the bot will tweet
-filename = open('az_database_list.csv', 'r')
+filename = open('data/az_database_list.csv', 'r')
 csv_data = csv.reader(filename)
 csv_list = list(csv_data)
 filename.close()
