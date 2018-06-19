@@ -31,7 +31,12 @@ while counter < 10: # Change 10 to however many lines you want to generate
 
     # remove punctuation
     exclude = ['"','(',')',';'] 
-    line = ''.join(ch for ch in line if ch not in exclude)
+    newline = []
+    for char in line:
+        if char not in exclude:
+            newline.append(char)
+     
+    line = ''.join(newline)
 
     # make line lowercase, add period at end
     line = line.lower() + "." 
