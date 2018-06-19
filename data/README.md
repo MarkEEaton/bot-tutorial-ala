@@ -9,5 +9,11 @@ It also contains other files that our scripts don't use, in case you want to swi
 - [Project GITenberg, collection of Project Gutenberg files on GitHub](https://github.com/GITenberg) 
 	- [See here](https://github.com/robincamille/nanogenmo2016/blob/master/excerpt.py) for a hacky example of how to randomly pick a book from Project GITenberg
 	- [Download the list of book names and IDs](https://github.com/gitenberg-dev/giten_site/blob/master/assets/GITenberg_repos_list_2.tsv)
-- [New Orleans Open Data](https://data.nola.gov/browse/) (this is where the alcohol license .csv is from) - check to see if your home city/state has an open data portal, too
+- [New Orleans Open Data](https://data.nola.gov/browse/) (this is where the original alcohol license .csv is from) - check to see if your home city/state has an open data portal, too
 - [Wikipedia lists](https://en.wikipedia.org/wiki/List_of_lists_of_lists): copy/paste the table into Excel, copy the columns you want into Notepad or BBEdit and save as a .txt. Or in Excel, delete the columns you don't want, remove all text formatting, and save as a .csv.
+
+## Text & data cleaning tips
+- I use [BBEdit](https://www.barebones.com/products/bbedit/) for Mac for all my .txt and .csv processing.
+- If the original dataset is in ALL CAPS!, change text case to Sentence Case. You might lose some acronyms but it's worth not getting shouted at.
+- Replace multiple line breaks (\n+ in regex) with single ones (\n).
+- Scan the text file to see if there are any funky characters that might throw you encoding errors.
