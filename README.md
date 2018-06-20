@@ -44,9 +44,10 @@ Not part of the in-person workshop? Download these files to your local machine o
 
 ## Basic bot: mybot1.py
 
-This isn't really a bot yet, but it is a script that sends out a tweet using the Twitter API. Our code is tweeting!
+This isn't really a bot yet, but it is a script that sends out one tweet using the Twitter API. Our code is tweeting!
 
-- Clicking `Run` will run the bot. A console will appear at the bottom of the screen with the output
+1. Go to the bot-tutorial-ala folder. Click on `mybot1.py` to see the code
+2. Clicking `Run` will run the bot. A console (output area) will appear at the bottom of the screen
 
 ## Basic bot: mybot2.py
 
